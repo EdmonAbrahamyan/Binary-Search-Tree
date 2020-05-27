@@ -5,13 +5,12 @@ using namespace std;
 
 class SearchTree {
 	struct Node {
-		int size_;
 		int 	key_;
 		Node* llink_;
 		Node* rlink_;
 		Node* parent_;
-		Node(int key = 0, Node * llink = 0, Node * rlink = 0, Node * parent = 0, int Size = 1) :
-			key_(key), llink_(llink), rlink_(rlink), parent_(parent), size_(Size) {}
+		Node(int key = 0, Node * llink = 0, Node * rlink = 0, Node * parent = 0) :
+			key_(key), llink_(llink), rlink_(rlink), parent_(parent) {}
 	};
 
 	static  void	clear(const Node* tree);
