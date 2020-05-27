@@ -5,7 +5,6 @@ using namespace std;
 int main()
 {
 	SearchTree s;
-
 	cout << endl << "*****   INSERTIONS: 4, 2, 3, 7, 6, 1, 5, 8   *****" << endl << endl;
 	s.insert(4);
 	s.insert(2);
