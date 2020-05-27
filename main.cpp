@@ -54,12 +54,5 @@ int main()
 	return 0;
 }
 
-void Tree(SearchTree& tree, int start, int end)
-{
-	if (start == end) return;
-	int middle = (start + end) / 2;
-	tree.insert(middle);
-	Tree(tree, start, middle);
-	Tree(tree, middle + 1, end);
-}
+
 
