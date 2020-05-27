@@ -49,7 +49,6 @@ SearchTree::insert(int key)
 	Node* runningPtr = tree_;
 	while (runningPtr) {
 		prevPtr = runningPtr;
-		++prevPtr->size_;
 		if (runningPtr->key_ > key)
 			runningPtr = runningPtr->llink_;
 		else
@@ -115,7 +114,6 @@ SearchTree::remove(int key)
 		}
 		while (parent)
 		{
-			--parent->size_; 
 			parent = parent->parent_;
 		}
 	}
