@@ -1,4 +1,3 @@
-
 #include "SearchTree.h"
 #include <iostream>
 using namespace std;
